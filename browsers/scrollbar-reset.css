@@ -1,0 +1,30 @@
+
+* {
+    scrollbar-width: auto !important;
+/*  Styling color is necessary for all scrollbars
+    to use the custom styles below on Chrome. */
+    scrollbar-color: auto !important;
+}
+
+*::-webkit-scrollbar {
+    all: initial !important;
+    background: #f1f1f1 !important;
+}
+*::-webkit-scrollbar-thumb {
+	all: initial !important;
+/*  Doesn't work */
+/*     width: 14px !important; */
+/*  Doesn't work */
+/*     border: 2px solid #f1f1f1; */
+    background: #c1c1c1 !important;
+}
+*::-webkit-scrollbar-thumb:hover {
+	all: initial !important;
+    background: #a8a8a8 !important;
+}
+*::-webkit-scrollbar-button {
+    all: initial !important;
+    display: none !important;
+}
+*::-webkit-scrollbar-track { all: initial !important; }
+*::-webkit-scrollbar-track-piece { all: initial !important; }

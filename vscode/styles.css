@@ -1,0 +1,29 @@
+:root {
+  --scrollbar-size: 20px;
+}
+
+.scrollbar.horizontal {
+  height: var(--scrollbar-size) !important;
+
+  .slider {
+    height: var(--scrollbar-size) !important;
+  }
+}
+
+.scrollbar.vertical {
+  width: var(--scrollbar-size) !important;
+
+  .slider {
+    width: var(--scrollbar-size) !important;
+  }
+}
+
+/* Shrink terminal to make it possible to grab the wide of scrollbar. */
+.xterm-viewport {
+  right: var(--scrollbar-size) !important;
+}
+
+/* Doesn't work well because not all scrollbar containers are set to 0 when there's nothing to scroll. */
+/* .scrollbar.invisible:not([style*="width: 0"]):not([style*="height: 0"]) {
+  opacity: 1 !important;
+} */
