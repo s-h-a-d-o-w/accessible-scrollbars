@@ -18,11 +18,6 @@
   }
 }
 
-/* Shrink terminal to make it possible to grab the wide of scrollbar. */
-.xterm-viewport {
-  right: var(--scrollbar-size) !important;
-}
-
 /* Doesn't work well because not all scrollbar containers are set to 0 when there's nothing to scroll. */
 /* .scrollbar.invisible:not([style*="width: 0"]):not([style*="height: 0"]) {
   opacity: 1 !important;
